@@ -108,7 +108,6 @@ class TestCase:
         time.sleep(2)
         textOnHat = driver.find_element(By.XPATH, "//div[@class='ndx-Design-selection-dragzone']")
         ActionChains(driver).drag_and_drop_by_offset(textOnHat, -10, -100).perform()
-        time.sleep(2)
         driver.find_element(By.XPATH, "//button[normalize-space()='Get Price']").click()
 
 
